@@ -4,3 +4,4 @@ python-dotenv
 pandas
 reportlab
 youtube-search-python
+httpx==0.27.2

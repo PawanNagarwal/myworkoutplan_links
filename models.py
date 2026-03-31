@@ -18,7 +18,7 @@ load_dotenv()
 class WorkoutPlanGenerator:
     def __init__(self):
         self.client = None
-        self.api_key = self.api_key
+        self.api_key = os.getenv('OPENAI_API_KEY')
         if self.api_key:
             openai.api_key = self.api_key
             self.client = openai
